@@ -4,11 +4,15 @@ library about_me.lib.main_contact;
 import 'dart:async';
 import 'dart:html';
 
+import 'package:about_me/model/contacts.dart';
+import 'package:dartson/dartson.dart';
 import 'package:polymer/polymer.dart';
 import 'package:about_me/model/contact.dart';
 import 'package:web_components/web_components.dart';
 import 'package:polymer_elements/paper_ripple.dart';
 import 'package:polymer_elements/paper_card.dart';
+
+const JsonName = 'contacts.json';
 
 /// Uses [PaperCard]
 /// Uses [PaperRipple]
@@ -29,14 +33,13 @@ class MainContact extends PolymerElement {
 
   attached() {
     super.attached();
-    clear('contacts');
-    addAll('contacts', [
-      new Contact("GitHub", "CORDEA", "", "https://github.com/CORDEA", "", "grey"),
-      new Contact("Qiita", "CORDEA", "", "http://qiita.com/CORDEA", "", "lime"),
-      new Contact("Hatenablog", "CORDEA", "", "http://cordea.hatenadiary.com/", "", "light-blue"),
-      new Contact("LinkedIn", "Yoshihiro Tanaka", "", "", "", "blue"),
-      new Contact("Kickstarter", "Yoshihiro Tanaka", "", "", "", "teal")
-    ]);
+    this.async(() {
+      HttpRequest.getString(JsonName).then((response) {
+        var dson = new Dartson.JSON();
+        var contacts = dson.decode(response, new Contacts()).contacts;
+        set('contacts', contacts);
+      });
+    });
   }
 
   MainContact.created() : super.created();
