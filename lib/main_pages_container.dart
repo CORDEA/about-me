@@ -29,4 +29,10 @@ class MainPagesContainer extends PolymerElement {
   @property
   String thumbnailUrl = "./images/CORDEA_LOGO_500.png";
 
+  @property
+  String title = "Yoshihiro Tanaka";
+
+  @property
+  String description = "Android / Xamarin Developer";
+
 }

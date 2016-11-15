@@ -32,7 +32,7 @@
     }
   </style>
   <template>
-    <neon-animated-pages selected="{{it.selectedIndex}}", entry-animation="{{it.entryAnimation}}" exit-animation="[[it.exitAnimation]]">
+    <neon-animated-pages selected="[[it.selectedIndex]]", entry-animation="[[it.entryAnimation]]" exit-animation="[[it.exitAnimation]]">
         <neon-animmatable elevation="0">
           <div>
             <paper-material class="profile">
@@ -41,8 +41,8 @@
                   <img src="[[thumbnailUrl]]" />
                 </div>
                 <div class="vertical center layout">
-                  <h1>Yoshihiro Tanaka</h1>
-                  <h2>Android / Xamarin Developer</h2>
+                  <h1>[[title]]</h1>
+                  <h2>[[description]]</h2>
                 </div>
               </div>
             </div>
