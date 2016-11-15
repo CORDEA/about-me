@@ -22,23 +22,20 @@ class MainApp extends PolymerElement {
   MainApp.created() : super.created();
 
   @property
-  String text;
-
-  @property
-  String thumbnailUrl = "http://placehold.it/350x350";
+  List<String> tabs = ["Profile", "Skill", "Contact"];
 
   @property
   int selectedIndex = 0;
 
-  int previousSelectedIndex = 0;
+  int _previousSelectedIndex = 0;
 
   @property
   SlideAnimation slideAnimation(int selectedIndex) {
     var anim = new SlideAnimation("slide-from-right-animation", "slide-left-animation", selectedIndex);
-    if (previousSelectedIndex > selectedIndex) {
+    if (_previousSelectedIndex > selectedIndex) {
       anim = new SlideAnimation("slide-from-left-animation", "slide-right-animation", selectedIndex);
     }
-    previousSelectedIndex = selectedIndex;
+    _previousSelectedIndex = selectedIndex;
     return anim;
   }
 }

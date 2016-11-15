@@ -14,9 +14,9 @@
         <paper-toolbar>
           <span class="top title">About Me</span>
           <paper-tabs selected="{{selectedIndex}}" class="bottom self-end" style="width: 100%;">
-            <paper-tab>Profile</paper-tab>
-            <paper-tab>Skill</paper-tab>
-            <paper-tab>Contact</paper-tab>
+            <template is="dom-repeat" items="{{tabs}}">
+              <paper-tab>{{item}}</paper-tab>
+            </template>
           </paper-tabs>
         </paper-toolbar>
       </paper-header-panel>
