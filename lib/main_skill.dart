@@ -16,6 +16,8 @@ import 'package:polymer_elements/paper_item_body.dart';
 import 'package:polymer_elements/iron_icon.dart';
 import 'package:polymer_elements/iron_icons.dart';
 
+const JsonName = 'skills.json';
+
 /// Uses [CharIcon]
 /// Uses [PaperCard]
 /// Uses [PaperListbox]
@@ -45,7 +47,7 @@ class MainSkill extends PolymerElement {
   attached() {
     super.attached();
     this.async(() {
-      HttpRequest.getString("skills.json").then((response) {
+      HttpRequest.getString(JsonName).then((response) {
         var dson = new Dartson.JSON();
         var origin = dson.decode(response, new Skills()).skills;
 
