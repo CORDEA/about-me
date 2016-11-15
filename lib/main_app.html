@@ -1,0 +1,30 @@
+<dom-module id="main-app">
+  <style include="iron-flex">
+    :host {
+      display: block;
+      height: 100%;
+    }
+    .self-end {
+      /* This mixin (from iron-flex-layout) aligns the tabs to the
+         bottom of the toolbar. */
+      @apply(--layout-self-end);
+    }
+  </style>
+  <template>
+    <div>
+      <paper-header-panel mode="waterfall-tall" tall-class="medium-tall">
+        <paper-toolbar>
+          <span class="top title">About Me</span>
+          <paper-tabs selected="{{selectedIndex}}" class="bottom self-end" style="width: 100%;">
+            <paper-tab>Profile</paper-tab>
+            <paper-tab>Skill</paper-tab>
+            <paper-tab>Contact</paper-tab>
+          </paper-tabs>
+        </paper-toolbar>
+      </paper-header-panel>
+      <main-pages-container it="{{slideAnimation(selectedIndex)}}">
+      </main-pages-container>
+    </div>
+  </template>
+  <script type="application/dart" src="main_pages_container.dart"></script>
+</dom-module>

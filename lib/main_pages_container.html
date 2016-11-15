@@ -1,0 +1,68 @@
+<dom-module id="main-pages-container">
+  <style include="iron-flex">
+    neon-animmatable > div {
+      margin: auto;
+      width: 1024px;
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+    neon-animmatable > div > * {
+      width: 100%;
+    }
+    h1 {
+      font-size: 34px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    #thumbnail-container > * {
+      border-radius: 50%;
+      width: 350px;
+      height: 350px;
+    }
+    #card-container {
+      margin: 0 4px;
+    }
+    .profile {
+      background-color: #ffffff;
+      padding: 24px;
+    }
+    .profile > div > div {
+      width: 100%;
+    }
+  </style>
+  <template>
+    <neon-animated-pages selected="{{it.selectedIndex}}", entry-animation="{{it.entryAnimation}}" exit-animation="[[it.exitAnimation]]">
+        <neon-animmatable elevation="0">
+          <div>
+            <paper-material class="profile">
+              <div>
+                <div id="thumbnail-container" class="vertical center layout">
+                  <img src="[[thumbnailUrl]]" />
+                </div>
+                <div class="vertical center layout">
+                  <h1>Yoshihiro Tanaka</h1>
+                  <h2>Android / Xamarin Developer</h2>
+                </div>
+              </div>
+            </div>
+          </paper-material>
+        </div>
+        </neon-animmatable>
+        <neon-animmatable>
+          <div>
+            <div id="card-container">
+              <main-skill />
+            </div>
+          </div>
+        </neon-animmatable>
+        <neon-animmatable>
+          <div>
+            <main-contact />
+          </div>
+        </neon-animmatable>
+    </neon-animated-pages>
+  </template>
+  <script type="application/dart" src="main_skill.dart"></script>
+  <script type="application/dart" src="main_contact.dart"></script>
+</dom-module>

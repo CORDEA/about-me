@@ -1,0 +1,73 @@
+<dom-module id="main-skill">
+  <style include="iron-flex">
+    paper-card {
+      margin: 8px;
+      color: white;
+      --paper-card-header-color: white;
+    }
+    .card-header {
+      @apply(--paper-font-headline);
+    }
+    .content {
+      float: left;
+    }
+    .card-sub {
+      color: var(--paper-grey-600);
+      margin: 10px 0;
+    }
+    iron-image {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    .icon {
+      height: 40px;
+      width: 40px;
+    }
+    .section {
+      margin-left: 72px;
+      height: 48px;
+      font-family: 'Roboto', 'Noto', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--primary-color);
+    }
+    iron-icon {
+      opacity: 0.54;
+    }
+  </style>
+  <template>
+    <template is="dom-repeat" items="{{skillKeys}}" as="key">
+      <div>
+        <div class="section vertical center-justified layout">{{key}}</div>
+        <paper-material class="white list">
+          <paper-listbox selectable="false">
+            <template is="dom-repeat" items="{{skillValue(key)}}">
+              <paper-icon-item>
+                <div class="icon" item-icon>
+                  <template is="dom-if" if="{{isEmpty(item.imageUrl)}}" >
+                    <char-icon text="{{item.title}}" />
+                  </template>
+                  <template is="dom-if" if="{{!isEmpty(item.imageUrl)}}" >
+                    <iron-image src="{{item.imageUrl}}" sizing="cover" />
+                  </template>
+                </div>
+                <paper-item-body two-line>
+                  <div>
+                    {{item.title}}
+                  </div>
+                  <div secondary>
+                    {{item.period}}
+                  </div>
+                </paper-item-body>
+                <iron-icon icon="{{item.icon}}" />
+              </paper-icon-item>
+            </template>
+          </paper-listbox>
+        </paper-material>
+      </div>
+    </template>
+  </template>
+  <script type="application/dart" src="char_icon.dart" />
+</dom-module>

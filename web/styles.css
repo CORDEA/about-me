@@ -1,0 +1,27 @@
+body {
+    font-family: RobotoDraft, sans-serif;
+    color: #333;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+
+    background-color: #fafafa;
+}
+
+.main {
+  margin: 0px;
+}
+
+.card .header iron-image {
+  min-height: 150px;
+  height: 150px;
+}

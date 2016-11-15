@@ -1,0 +1,72 @@
+<dom-module id="main-contact">
+  <style include="iron-flex">
+    :host {
+      display: block;
+      height: 100%;
+    }
+    paper-card {
+      margin: 8px;
+      color: white;
+      --paper-card-header-color: white;
+    }
+    .lime {
+      background: var(--paper-lime-500);
+    }
+    .brown {
+      background: var(--paper-brown-500);
+    }
+    .teal {
+      background: var(--paper-teal-500);
+    }
+    .orange {
+      background: var(--paper-orange-500);
+    }
+    .grey {
+      background: var(--paper-grey-800);
+    }
+    .blue {
+      background: var(--paper-blue-500);
+    }
+    .light-blue {
+      background: var(--paper-light-blue-500);
+    }
+    .card-header {
+      @apply(--paper-font-headline);
+    }
+    .content {
+      float: left;
+    }
+    .card-sub {
+      color: var(--paper-grey-300);
+      margin: 10px 0;
+    }
+    .card-thumbnail {
+      width: 100px;
+      height: 170px;
+      background-size: cover;
+    }
+  </style>
+  <template>
+    <div>
+      <template is="dom-repeat" items="{{contacts}}">
+        <paper-card class$="horizontal layout {{item.color}}" on-click="onClickButton" id="{{item.name}}">
+           <paper-ripple ></paper-ripple>
+           <div class="flex layout content">
+             <div class="card-content">
+               <div class="card-header">
+                 {{item.name}}
+               </div>
+               <div class="card-sub">
+                 {{item.userName}}
+               </div>
+               <div>
+                 {{item.description}}
+               </div>
+             </div>
+            </div>
+           <div class="card-thumbnail" />
+        </paper-card>
+      </template>
+    <div>
+  </template>
+</dom-module>

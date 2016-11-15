@@ -1,0 +1,78 @@
+<dom-module id="char-icon">
+  <style include="iron-flex">
+    :host > div {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      display: table;
+    }
+    :host > div > label {
+      font-size: 18px;
+      display: table-cell;
+      vertical-align: middle;
+      color: white;
+    }
+    .red {
+      background-color: var(--paper-red-500);
+    }
+    .pink {
+      background-color: var(--paper-pink-500);
+    }
+    .purple {
+      background-color: var(--paper-purple-500);
+    }
+    .deep-purple {
+      background-color: var(--paper-deep-purple-500);
+    }
+    .indigo {
+      background-color: var(--paper-indigo-500);
+    }
+    .blue {
+      background-color: var(--paper-blue-500);
+    }
+    .light-blue {
+      background-color: var(--paper-light-blue-500);
+    }
+    .cyan {
+      background-color: var(--paper-cyan-500);
+    }
+    .teal {
+      background-color: var(--paper-teal-500);
+    }
+    .green {
+      background-color: var(--paper-green-500);
+    }
+    .light-green {
+      background-color: var(--paper-light-green-500);
+    }
+    .lime {
+      background-color: var(--paper-lime-500);
+    }
+    .yellow {
+      background-color: var(--paper-yellow-500);
+    }
+    .amber {
+      background-color: var(--paper-amber-500);
+    }
+    .orange {
+      background-color: var(--paper-orange-500);
+    }
+    .deep-orange {
+      background-color: var(--paper-deep-orange-500);
+    }
+    .brown {
+      background-color: var(--paper-brown-500);
+    }
+    .blue-grey {
+      background-color: var(--paper-blue-grey-500);
+    }
+  </style>
+  <template>
+    <div class$="{{color}}" >
+      <label>
+        {{char}}
+      </label>
+    </div>
+  </template>
+</dom-module>
