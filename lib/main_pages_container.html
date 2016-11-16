@@ -2,12 +2,8 @@
   <style include="iron-flex">
     neon-animmatable > div {
       margin: auto;
-      width: 1024px;
-      margin-top: 80px;
-      margin-bottom: 80px;
-    }
-    neon-animmatable > div > * {
-      width: 100%;
+      padding: 80px;
+      max-width: 1024px;
     }
     h1 {
       font-size: 34px;
@@ -26,15 +22,13 @@
     .profile {
       background-color: #ffffff;
       padding: 24px;
-    }
-    .profile > div > div {
       width: 100%;
     }
   </style>
   <template>
     <neon-animated-pages selected="[[it.selectedIndex]]", entry-animation="[[it.entryAnimation]]" exit-animation="[[it.exitAnimation]]">
         <neon-animmatable elevation="0">
-          <div>
+          <div class="horizontal center-justified layout">
             <paper-material class="profile">
               <div>
                 <div id="thumbnail-container" class="vertical center layout">
