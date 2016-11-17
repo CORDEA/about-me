@@ -1,6 +1,7 @@
 @HtmlImport('main_skill.html')
 library about_me.lib.main_skill;
 
+import 'dart:async';
 import 'dart:html';
 
 import 'package:about_me/char_icon.dart';
@@ -39,6 +40,14 @@ class MainSkill extends PolymerElement {
 
   @reflectable
   bool isEmpty(String url) => url == null || url.isEmpty;
+
+  @reflectable
+  void onClickCell(event, [_]) {
+    var id = event.currentTarget.attributes['id'];
+    new Timer(new Duration(milliseconds: 300), () {
+      window.open('https://github.com/CORDEA?language=${id}&tab=repositories', '_blank');
+    });
+  }
 
   Map<String, List<Skill>> _skills = {};
 

@@ -29,7 +29,7 @@
         <paper-material class="white list">
           <paper-listbox selectable="false">
             <template is="dom-repeat" items="{{skillValue(key)}}">
-              <paper-icon-item>
+              <paper-icon-item id="{{item.linkName}}" on-click="onClickCell">
                 <div class="icon" item-icon>
                   <template is="dom-if" if="{{isEmpty(item.imageUrl)}}" >
                     <char-icon text="{{item.title}}" />
