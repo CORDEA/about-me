@@ -7,7 +7,6 @@ import 'dart:html';
 import 'package:about_me/char_icon.dart';
 import 'package:about_me/model/skill.dart';
 import 'package:about_me/model/skills.dart';
-import 'package:dartson/dartson.dart' hide Property;
 import 'package:polymer/polymer.dart';
 import 'package:web_components/web_components.dart';
 import 'package:polymer_elements/paper_card.dart';
@@ -57,9 +56,7 @@ class MainSkill extends PolymerElement {
     super.attached();
     this.async(() {
       HttpRequest.getString(JsonName).then((response) {
-        var dson = new Dartson.JSON();
-        var origin = dson.decode(response, new Skills()).skills;
-
+        var origin = new Skills.fromJson(response).skills;
         Map<String, List<Skill>> skills = {};
         origin.forEach((skill) {
           if (!skills.containsKey(skill.type)) {

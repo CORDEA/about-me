@@ -1,10 +1,7 @@
 library about_me.lib.model.skill;
 
-import 'dart:html';
-import 'package:dartson/dartson.dart' as dson;
 import 'package:polymer/polymer.dart';
 
-@dson.Entity()
 class Skill extends JsProxy {
 
   @reflectable
@@ -35,7 +32,6 @@ class Skill extends JsProxy {
   String linkName;
 
   @reflectable
-  @dson.Property(ignore: true)
   String get period => _getPeriod();
 
   String _getPeriod() {
@@ -43,7 +39,6 @@ class Skill extends JsProxy {
   }
 
   @reflectable
-  @dson.Property(ignore: true)
   String get icon => _getIcon();
 
   String _getIcon() {
@@ -60,4 +55,15 @@ class Skill extends JsProxy {
     return "";
   }
 
+  Skill.fromMap(map) {
+    type = map["type"];
+    imageUrl = map["imageUrl"];
+    title = map["title"];
+    description = map["description"];
+    startYear = map["startYear"];
+    endYear = map["endYear"];
+    months = map["months"];
+    level = map["level"];
+    linkName = map["linkName"];
+  }
 }

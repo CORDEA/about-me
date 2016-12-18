@@ -1,10 +1,7 @@
 library about_me.lib.model.contact;
 
-import 'dart:html';
-import 'package:dartson/dartson.dart' as dson;
 import 'package:polymer/polymer.dart';
 
-@dson.Entity()
 class Contact extends JsProxy {
 
   @reflectable
@@ -25,4 +22,12 @@ class Contact extends JsProxy {
   @reflectable
   String color;
 
+  Contact.fromMap(map) {
+    name = map["name"];
+    userName = map["userName"];
+    description = map["description"];
+    url = map["url"];
+    thumbnailUrl = map["thumbnailUrl"];
+    color = map["color"];
+  }
 }

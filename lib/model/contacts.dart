@@ -1,11 +1,17 @@
 library about_me.lib.model.contacts;
 
+import 'dart:convert';
 import 'package:about_me/model/contact.dart';
-import 'package:dartson/dartson.dart';
 
-@Entity()
 class Contacts {
 
   List<Contact> contacts;
 
+  Contacts.fromJson(json) {
+    contacts = [];
+    var data = JSON.decode(json);
+    data["contacts"].forEach((contact) {
+      contacts.add(new Contact.fromMap(contact));
+    });
+  }
 }
