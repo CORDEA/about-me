@@ -1,8 +1,8 @@
 name: 'about_me'
 version: 0.0.1
 description: A web app built using polymer.dart.
-#author: Yoshihiro Tanaka <email@example.com>
-#homepage: https://cordea.jp
+author: Yoshihiro Tanaka <contact@cordea.jp>
+homepage: http://cordea.jp
 
 environment:
   sdk: '>=1.9.0 <2.0.0'
