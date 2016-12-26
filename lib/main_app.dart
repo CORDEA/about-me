@@ -1,6 +1,7 @@
 @HtmlImport('main_app.html')
 library about_me.lib.main_app;
 
+import 'dart:async';
 import 'dart:html';
 
 import 'package:about_me/main_pages_container.dart';
@@ -9,6 +10,7 @@ import 'package:polymer_elements/paper_header_panel.dart';
 import 'package:polymer_elements/paper_toolbar.dart';
 import 'package:polymer_elements/paper_tabs.dart';
 import 'package:polymer_elements/paper_tab.dart';
+import 'package:polymer_elements/paper_fab.dart';
 import 'package:polymer/polymer.dart';
 import 'package:web_components/web_components.dart';
 
@@ -17,6 +19,7 @@ import 'package:web_components/web_components.dart';
 /// Uses [PaperToolbar]
 /// Uses [PaperTabs]
 /// Uses [PaperTab]
+/// Uses [PaperFab]
 @PolymerRegister('main-app')
 class MainApp extends PolymerElement {
   MainApp.created() : super.created();
@@ -28,6 +31,13 @@ class MainApp extends PolymerElement {
   int selectedIndex = 0;
 
   int _previousSelectedIndex = 0;
+
+  @reflectable
+  void onClickFab(event, [_]) {
+    new Timer(new Duration(milliseconds: 300), () {
+      window.open('https://github.com/CORDEA/about-me', '_blank');
+    });
+  }
 
   @property
   SlideAnimation slideAnimation(int selectedIndex) {

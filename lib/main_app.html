@@ -2,10 +2,14 @@
   <style include="iron-flex">
     :host {
       display: block;
-      height: 100%;
     }
     .self-end {
       @apply(--layout-self-end);
+    }
+    .fab {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
     }
   </style>
   <template>
@@ -22,6 +26,7 @@
       </paper-header-panel>
       <main-pages-container it="{{slideAnimation(selectedIndex)}}">
       </main-pages-container>
+      <paper-fab class="fab" icon="code" on-click="onClickFab"></paper-fab>
     </div>
   </template>
   <script type="application/dart" src="main_pages_container.dart"></script>
