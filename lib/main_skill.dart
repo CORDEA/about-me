@@ -50,7 +50,7 @@ class MainSkill extends PolymerElement {
       return;
     }
     new Timer(new Duration(milliseconds: 300), () {
-      window.open('https://github.com/CORDEA?language=${item.linkName}&tab=repositories', '_blank');
+      window.open('https://github.com/CORDEA?language=${item.linkName}&tab=repositories', '_self');
     });
   }
 

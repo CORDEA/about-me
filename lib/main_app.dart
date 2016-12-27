@@ -35,7 +35,7 @@ class MainApp extends PolymerElement {
   @reflectable
   void onClickFab(event, [_]) {
     new Timer(new Duration(milliseconds: 300), () {
-      window.open('https://github.com/CORDEA/about-me', '_blank');
+      window.open('https://github.com/CORDEA/about-me', '_self');
     });
   }
 

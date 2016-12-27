@@ -26,7 +26,7 @@ class MainContact extends PolymerElement {
     var id = event.currentTarget.attributes['id'];
     var contact = contacts.where((item) => item.name == id).first;
     new Timer(new Duration(milliseconds: 300), () {
-      window.open(contact.url, '_blank');
+      window.open(contact.url, '_self');
     });
   }
 
