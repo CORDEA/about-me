@@ -42,9 +42,15 @@ class MainSkill extends PolymerElement {
 
   @reflectable
   void onClickCell(event, [_]) {
-    var id = event.currentTarget.attributes['id'];
+    var target = event.currentTarget;
+    var key = target.attributes['key'];
+    var index = int.parse(target.attributes['index']);
+    var item = skillValue(key)[index];
+    if (!item.clickable) {
+      return;
+    }
     new Timer(new Duration(milliseconds: 300), () {
-      window.open('https://github.com/CORDEA?language=${id}&tab=repositories', '_blank');
+      window.open('https://github.com/CORDEA?language=${item.linkName}&tab=repositories', '_blank');
     });
   }
 

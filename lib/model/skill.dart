@@ -32,6 +32,9 @@ class Skill extends JsProxy {
   String linkName;
 
   @reflectable
+  bool clickable;
+
+  @reflectable
   String get period => _getPeriod();
 
   String _getPeriod() {
@@ -65,5 +68,9 @@ class Skill extends JsProxy {
     months = map["months"];
     level = map["level"];
     linkName = map["linkName"];
+    if (linkName == null || linkName.isEmpty) {
+      linkName = title.toLowerCase();
+    }
+    clickable = map["clickable"] ?? true;
   }
 }

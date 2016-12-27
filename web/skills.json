@@ -13,7 +13,6 @@
     {
       "type": "Language",
       "title": "Dart",
-      "linkName": "",
       "description": "",
       "imageUrl": "images/logos/dart.png",
       "startYear": 2016,
@@ -23,7 +22,6 @@
     {
       "type": "Language",
       "title": "Python",
-      "linkName": "",
       "description": "",
       "imageUrl": "images/logos/python.png",
       "startYear": 2013,
@@ -33,7 +31,6 @@
     {
       "type": "Language",
       "title": "Java",
-      "linkName": "",
       "description": "",
       "imageUrl": "",
       "startYear": 2013,
@@ -43,7 +40,6 @@
     {
       "type": "Language",
       "title": "Swift",
-      "linkName": "",
       "description": "",
       "imageUrl": "images/logos/swift.svg",
       "startYear": 2015,
@@ -53,7 +49,6 @@
     {
       "type": "Language",
       "title": "Kotlin",
-      "linkName": "",
       "description": "",
       "imageUrl": "images/logos/kotlin.png",
       "startYear": 2015,
@@ -63,7 +58,6 @@
     {
       "type": "Language",
       "title": "JavaScript",
-      "linkName": "",
       "description": "",
       "imageUrl": "",
       "startYear": 2013,
@@ -83,7 +77,6 @@
     {
       "type": "Language",
       "title": "Go",
-      "linkName": "",
       "description": "",
       "imageUrl": "images/logos/go.jpg",
       "startYear": 2015,
@@ -103,7 +96,6 @@
     {
       "type": "Language",
       "title": "Groovy",
-      "linkName": "",
       "description": "",
       "imageUrl": "images/logos/groovy.svg",
       "startYear": 2015,
@@ -113,7 +105,6 @@
     {
       "type": "Language",
       "title": "Objective-C",
-      "linkName": "",
       "description": "",
       "imageUrl": "",
       "startYear": 2015,
@@ -123,7 +114,6 @@
     {
       "type": "Language",
       "title": "R",
-      "linkName": "",
       "description": "",
       "imageUrl": "",
       "startYear": 2014,
@@ -133,7 +123,6 @@
     {
       "type": "Language",
       "title": "Shell",
-      "linkName": "",
       "description": "",
       "imageUrl": "",
       "startYear": 2014,
@@ -153,7 +142,6 @@
     {
       "type": "Language",
       "title": "Erlang",
-      "linkName": "erlang",
       "description": "",
       "imageUrl": "",
       "startYear": 2015,
@@ -163,7 +151,6 @@
     {
       "type": "Language",
       "title": "Fortran",
-      "linkName": "fortran",
       "description": "",
       "imageUrl": "",
       "startYear": 2015,
@@ -231,7 +218,8 @@
       "imageUrl": "",
       "startYear": 2008,
       "endYear": 2016,
-      "level": 0
+      "level": 0,
+      "clickable": false
     },
     {
       "type": "OS / Distribution",
@@ -240,7 +228,8 @@
       "imageUrl": "",
       "startYear": 2013,
       "endYear": 2016,
-      "level": 2
+      "level": 2,
+      "clickable": false
     },
     {
       "type": "OS / Distribution",
@@ -249,7 +238,8 @@
       "imageUrl": "",
       "startYear": 2009,
       "endYear": 2016,
-      "level": 1
+      "level": 1,
+      "clickable": false
     },
     {
       "type": "OS / Distribution",
@@ -258,7 +248,8 @@
       "imageUrl": "",
       "startYear": 2013,
       "endYear": 2016,
-      "level": 0
+      "level": 0,
+      "clickable": false
     }
   ]
 }
