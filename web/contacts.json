@@ -10,7 +10,7 @@
       "name": "Qiita",
       "userName": "CORDEA",
       "url": "http://qiita.com/CORDEA",
-      "color": "lime"
+      "color": "light-green"
     },
     {
       "name": "Hatenablog",
@@ -29,6 +29,12 @@
       "userName": "Yoshihiro Tanaka",
       "url": "",
       "color": "teal"
+    },
+    {
+      "name": "Mail",
+      "userName": "Yoshihiro Tanaka",
+      "url": "mailto:contact@cordea.jp",
+      "color": "brown"
     }
   ]
 }
