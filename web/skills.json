@@ -158,6 +158,15 @@
       "level": 0
     },
     {
+      "type": "Language",
+      "title": "Ruby",
+      "description": "",
+      "imageUrl": "",
+      "startYear": 2016,
+      "endYear": 2017,
+      "level": 0
+    },
+    {
       "type": "Mobile Platform",
       "title": "Xamarin.Android",
       "description": "",
