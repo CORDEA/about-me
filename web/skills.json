@@ -167,6 +167,15 @@
       "level": 0
     },
     {
+      "type": "Language",
+      "title": "Crystal",
+      "description": "",
+      "imageUrl": "",
+      "startYear": 2017,
+      "endYear": 2017,
+      "level": 0
+    },
+    {
       "type": "Mobile Platform",
       "title": "Xamarin.Android",
       "description": "",
