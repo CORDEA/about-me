@@ -159,6 +159,15 @@
     },
     {
       "type": "Language",
+      "title": "Factor",
+      "description": "",
+      "imageUrl": "",
+      "startYear": 2017,
+      "endYear": 2017,
+      "level": 0
+    },
+    {
+      "type": "Language",
       "title": "Ruby",
       "description": "",
       "imageUrl": "",
