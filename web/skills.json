@@ -187,6 +187,7 @@
     {
       "type": "Mobile Platform",
       "title": "Xamarin.Android",
+      "linkName": "xamarin-android",
       "description": "",
       "imageUrl": "",
       "startYear": 2014,
@@ -196,6 +197,7 @@
     {
       "type": "Mobile Platform",
       "title": "Xamarin.iOS",
+      "linkName": "xamarin-ios",
       "description": "",
       "imageUrl": "",
       "startYear": 2015,
