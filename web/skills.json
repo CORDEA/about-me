@@ -185,7 +185,7 @@
       "level": 0
     },
     {
-      "type": "Mobile Platform",
+      "type": "Mobile Platform (Developer)",
       "title": "Xamarin.Android",
       "description": "",
       "imageUrl": "",
@@ -194,7 +194,7 @@
       "level": 2
     },
     {
-      "type": "Mobile Platform",
+      "type": "Mobile Platform (Developer)",
       "title": "Xamarin.iOS",
       "description": "",
       "imageUrl": "",
@@ -203,7 +203,7 @@
       "level": 0
     },
     {
-      "type": "Mobile Platform",
+      "type": "Mobile Platform (Developer)",
       "title": "Android",
       "description": "",
       "imageUrl": "",
@@ -212,7 +212,7 @@
       "level": 3
     },
     {
-      "type": "Mobile Platform",
+      "type": "Mobile Platform (Developer)",
       "title": "iOS",
       "description": "",
       "imageUrl": "",
@@ -221,7 +221,7 @@
       "level": 1
     },
     {
-      "type": "Mobile Platform",
+      "type": "Mobile Platform (Developer)",
       "title": "BlackBerry",
       "description": "BlackBerry OS 10",
       "imageUrl": "",
@@ -230,7 +230,7 @@
       "level": 0
     },
     {
-      "type": "Mobile Platform",
+      "type": "Mobile Platform (Developer)",
       "title": "Windows Phone",
       "description": "Windows Phone OS 8",
       "imageUrl": "",
@@ -239,7 +239,7 @@
       "level": 0
     },
     {
-      "type": "OS / Distribution",
+      "type": "OS / Distribution (User)",
       "title": "Windows",
       "description": "",
       "imageUrl": "",
@@ -249,7 +249,7 @@
       "clickable": false
     },
     {
-      "type": "OS / Distribution",
+      "type": "OS / Distribution (User)",
       "title": "Macos",
       "description": "",
       "imageUrl": "",
@@ -259,7 +259,7 @@
       "clickable": false
     },
     {
-      "type": "OS / Distribution",
+      "type": "OS / Distribution (User)",
       "title": "Fedora",
       "description": "",
       "imageUrl": "",
@@ -269,7 +269,7 @@
       "clickable": false
     },
     {
-      "type": "OS / Distribution",
+      "type": "OS / Distribution (User)",
       "title": "CentOS",
       "description": "",
       "imageUrl": "",
